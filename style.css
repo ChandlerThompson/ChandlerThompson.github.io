@@ -1,0 +1,66 @@
+body{
+  background: url(image/background.jpg) no-repeat center center fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+
+}
+
+h1{
+  text-align: center;
+  background-color: rgb(128,128,128);
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+h2{
+  text-shadow: 2px 2px black;
+}
+.navbar{
+  background-color: rgb(128,128,128);
+  padding-top: 0px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+
+
+/* set up the grids for the cards */
+.card1{grid-area: card1;}
+.card2{grid-area: card2;}
+.card3{grid-area: card3;}
+.card4{grid-area: card4;}
+.card5{grid-area: card5;}
+.card6{grid-area: card6;}
+.cards{
+  display: grid;
+  grid-template-areas:
+  'card1 card2 card3'
+  'card4 card5 card6';
+  grid-gap: 150px;
+  padding: 10px;
+  justify-content: center;
+
+}
+
+
+.info{
+  background-color: rgb(128,128,128);
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.alignment{
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+}
+a:link{
+  text-decoration: none;
+  color: white;
+}

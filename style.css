@@ -42,6 +42,7 @@ h2{
   grid-gap: 150px;
   padding: 10px;
   justify-content: center;
+  margin-bottom: 50px;
 
 }
 
@@ -52,6 +53,7 @@ h2{
   padding: 20px;
   margin-top: 20px;
   border-radius: 20px;
+
 }
 .alignment{
   text-align: center;
@@ -63,4 +65,49 @@ ul{
 a:link{
   text-decoration: none;
   color: white;
+}
+
+.img5{grid-area: img5}
+.space1{grid-area: space1}
+.space2{grid-area: space2}
+.box{
+  display: grid;
+  grid-template-areas:
+  'space1 space1'
+  'img5 space2';
+  grid-gap: 20px;
+}
+
+
+@media screen and (max-width:1270px){
+  .cards{
+    grid-gap: 50px;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .cards{
+    grid-template-areas:
+    'card1 card2'
+    'card3 card4'
+    'card5 card6';
+  }
+}
+
+@media screen and (max-width:780px){
+  .cards{
+    grid-template-areas:
+    'card1'
+    'card2'
+    'card3'
+    'card4'
+    'card5'
+    'card6';
+  }
+  .box{
+    grid-template-areas:
+    'space1'
+    'img5'
+    'space2';
+  }
 }
